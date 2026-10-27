@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Profil Słuchacza</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="/">LOGO</a> |
+        <a href="/profil">PROFIL SŁUCHACZA</a> |
+        <a href="/wykres">INTERAKTYWNY WYKRES</a> |
+        <a href="/dane">INTERAKTYWNE DANE</a> |
+        <a href="/ulubione">POLUBIONE UTWORY</a>
+    </nav>
+    
+    <div class="content">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>
